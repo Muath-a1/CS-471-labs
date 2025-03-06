@@ -1,0 +1,44 @@
+.one {
+    color: red;
+    
+    
+}
+
+.one_div{
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+}
+
+.two {
+    color: yellow;
+    
+    
+    
+}
+.two_div{
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.three {
+    color: white;
+    
+}
+
+.three_div{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+.ex {
+    background-color:burlywood ;
+    color: green;
+}
+.be {
+    background-color:lightblue ;
+    color: white;
+
+}

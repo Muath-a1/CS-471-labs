@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .table1 { 
+            border-collapse: separate;
+            text-align: center;
+        }
+        .table2 { 
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .image-cell img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <table class="table1">
+        <caption>table 1: table of fruits and their prices</caption>
+        <tr>
+            <th>fruit</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>apple</td>
+            <td>$0.25</td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td>$0.50</td>
+        </tr>
+        <tr>
+            <td>banana</td>
+            <td>$1.00</td>
+        </tr>
+        <tr>
+            <td>pineapple</td>
+            <td>$2.00</td>
+        </tr>
+        <tr class="bold">
+            <td>otal</td>
+            <td>$3.75</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table class="table2">
+        <caption>table 2: a more complex sample table</caption>
+        <tr>
+            <td rowspan="2" class="image-cell">
+                <img src="{% static 'book1.jpeg'%}" alt="desert">
+            </td>
+            <td colspan="4"><b>camelid comparison<br>approximate as of 6/2011</b></td>
+        </tr>
+        <tr>
+            <th># of humps</th>
+            <th>indigenous region</th>
+            <th>spits?</th>
+            <th>produces wool?</th>
+        </tr>
+        <tr>
+            <td>dromedary</td>
+            <td>1</td>
+            <td>arabian Peninsula</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td>camels (bactrian)</td>
+            <td>2</td>
+            <td>africa/Asia</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td>llamas</td>
+            <td>1</td>
+            <td>andes Mountains</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+    </table>
+
+</body>
+</html>
