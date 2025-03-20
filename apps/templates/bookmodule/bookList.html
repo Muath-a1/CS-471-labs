@@ -5,10 +5,10 @@
     
     {% if books %}
         <ul>
-            {% for book in books %}
+            {% for obj in books %}
                 <li>
-                    <strong>Title:</strong> {{ book.title }} <br />
-                    <strong>Author:</strong> {{ book.author }} <br />
+                    ID: {{ obj.id }}, Title: {{ obj.title }}
+                    <hr>
                 </li>
             {% endfor %}
         </ul>
